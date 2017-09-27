@@ -7,7 +7,7 @@ import java.util.Map;
 
 import com.smarthome.head.SmartHomeConstant;
 
-public final class SocketProtocolFactory {
+public final class SocketProtocolFactory extends SuperFactory{
 
 	public static MDProtocol gen0x11(boolean isOn) throws Exception {
 		Map<Integer, Boolean> p = new HashMap<Integer, Boolean>();

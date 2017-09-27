@@ -15,7 +15,27 @@ import java.util.Arrays;
  */
 public class SmartHomeData
 {
-	
+	public SmartHomeData() {
+	}
+	public SmartHomeData(int sequence,short dataSequ,long dstId,long srcId,byte[] ctn){
+    	this.isFin = false;
+        this.isRead = true;
+        this.isACK = true;
+        this.dataFormat = SmartHomeConstant.BINARY;
+        this.keyLevel=0x00;
+        this.encryptType = SmartHomeConstant.Encrypt.ENCRYPT_TYPE_AES;
+        this.opcode = 0x05;
+        this.msgID = 0x01;
+        this.sequence = sequence;//
+        this.dataSequ = dataSequ;//
+        this.time = System.currentTimeMillis()/1000;
+        this.dstID = dstId;//
+        this.wsDstID = dstId;//
+        this.code = 0;
+        this.datID = 0;
+        this.srcID = srcId;//
+        this.data=ctn;
+	}
 	/**
 	 * 标识数据包是否是最后一包，0-不是；1-最后一包数据
 	 */
