@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="vision_smartHome" />
+    <version value="7" />
+
+    <list>
+        <mapping class="com.vision.smarthomeapi.dal.sql.SmartDeviceSQL" />
+        <mapping class="com.vision.smarthomeapi.dal.sql.DeviceUpgradeInfo" />
+        <mapping class="com.vision.smarthomeapi.dal.user.SecurityUserInfo" />
+
+    </list>
+</litepal>

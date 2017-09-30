@@ -57,7 +57,15 @@ public final class SocketProtocolFactory extends SuperFactory{
 		return o;
 	}
 
-	public Map<String, Object> parse0x30(MDProtocol o) {
+	public static MDProtocol gen0x11()throws Exception{
+		
+		return null;
+	}
+	
+	public Map<String, Object> parse0x30(byte[] end) {
+		MDProtocol o=new MDProtocol();
+		o.end = end;
+		o.b2o();
 		Map<String, Object> r = new HashMap<String, Object>();
 		byte powerField = (byte) (o.ctn[0] & 0xff);
 		byte lockField = (byte) (o.ctn[1] & 0xff);

@@ -1,0 +1,12 @@
+dal中device 是设备类
+
+（以插座Socket为例  发送11控制指令使用openSocketPowerArray方法）
+
+smarthomeapi是引用项目
+
+里面包含设备总类SmartDevice 以及各种发码收码的流程
+
+
+Socket socket = new Socket();
+
+socket.openSocketPowerArray();
